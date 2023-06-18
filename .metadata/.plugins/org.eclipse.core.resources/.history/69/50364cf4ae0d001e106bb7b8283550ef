@@ -1,0 +1,11 @@
+package com.myweb.www.service;
+
+import com.myweb.www.domain.MemberVO;
+
+public interface MemberService {
+
+	MemberVO isMem(String id, String pw);
+
+	int signup(MemberVO mvo);
+
+}

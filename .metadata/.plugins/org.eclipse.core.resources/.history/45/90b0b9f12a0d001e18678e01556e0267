@@ -1,0 +1,14 @@
+package com.myweb.www.repository;
+
+import com.myweb.www.domain.MemberVO;
+import com.myweb.www.service.MemberService;
+
+public class MemberDAO implements MemberService {
+
+	@Override
+	public int sginup(MemberVO mvo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

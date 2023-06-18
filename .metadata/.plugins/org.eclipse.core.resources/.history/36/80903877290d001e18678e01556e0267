@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+	background-color: #1a1a1a;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	margin: auto;
+	padding: 1em;
+}
+
+input {
+	margin-bottom: 1em;
+	padding: 0.5em;
+	border: none;
+	border-radius: 5px;
+	color: black;
+}

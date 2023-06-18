@@ -1,0 +1,33 @@
+package com.myweb.www.contorller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.myweb.www.domain.MemberVO;
+import com.myweb.www.service.MemberService;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Controller
+@RequestMapping("/mem/*")
+public class MemberContorller {
+	private MemberService msv;
+	private int isOk;
+	
+	@RequestMapping("/login")
+	public String login() {
+		
+		return "member/login";
+	}
+	
+	@PostMapping("/signup")
+	public String sginUp(Model m, MemberVO mvo) {
+		log.info(" >>>>> 회원가입 접근 완료 >>>>> : {}");
+		log.info(" >>>>> 회원정보 >>>>> : " + mvo.toString());
+		isOk = msv.sginup(mvo);
+		return "home";
+	}
+}

@@ -1,0 +1,13 @@
+package com.myweb.www.service;
+
+import com.myweb.www.domain.MemberVO;
+
+public class MemberServiceImpl implements MemberService {
+
+	@Override
+	public int sginup(MemberVO mvo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
